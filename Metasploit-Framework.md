@@ -1,6 +1,6 @@
 
 # Metasploit Framework
-<img width="415" alt="Screenshot 2024-01-22 155524" src="https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/557e82d9-df15-48f8-b2ae-521555d49911">
+<img width="600" alt="Screenshot 2024-01-22 155524" src="https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/557e82d9-df15-48f8-b2ae-521555d49911">
 
 Metasploit works by providing the user a number of exploits that can a vulnerability to target and leave behind a payload(shellcode, listener, rootkit) that provide the user access to the target system.
 

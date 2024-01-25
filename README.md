@@ -334,5 +334,7 @@ Conpot is a low interactive server side Industrial Control Systems honeypot desi
 Industrial Control Systems Library: Poster
 The Fall 2015 poster from the SANS institute details the SANS ICS Curriculum and what categories of actions contribute to security.
 
+https://www.vanimpe.eu/2015/12/06/intro-plcs-ics-scada/
+
 https://www.vanimpe.eu/2015/12/07/introduction-to-modbus-tcp-traffic/
 

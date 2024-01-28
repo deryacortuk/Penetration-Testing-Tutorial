@@ -4,15 +4,21 @@ https://portswigger.net/burp
 
 Burp Suite is an integrated platform for security testing and pretty much a must when
 you are starting out. It has a variety of tools which are helpful, including:
+
 • An intercepting proxy which lets you inspect and modify traffic to a site
+
 • An application aware Spider for crawling content and functionality (either passively
 or actively)
+
 • A web scanner for automating the detection of vulnerabilities
+
 • A repeater for manipulating and resending individual requests
+
 • A sequencer tool for testing the randomness of tokens
+
 • A comparer tool to compare requests and responses
-Bucky Roberts, from the New Boston, has a tutorial series on Burp Suite available at
-https://vimeo.com/album/3510171 which provides an introduction to Burp Suite.
+
+
 
 
 # ZAP Proxy
@@ -100,10 +106,13 @@ http://sqlmap.org
 sqlmap is an open source penetration tool that automates the process of detecting and
 exploiting SQL injection vulnerabilities. The website has a huge list of features, including
 support for:
+
 • A wide range of database types (e.g., MySQL, Oracle, PostgreSQL, MS SQL Server, etc.)
+
 • Six SQL injection techniques (e.g., boolean-based blind, time-based blind, errorbased, UNION query-based, etc)
+
 • Enumerating users, password hashes, privileges, roles, databases, tables and columns
-• And much more 
+
 
 According to Michiel Prins, sqlmap is helpful for automating the exploitation of SQL
 injection vulnerabilities to prove something is vulnerable, saving a lot of manual work.
@@ -182,12 +191,16 @@ http://www.whatcms.org
 
 What CMS is a simple application which allows you to enter a site url and it’ll return the
 likely Content Management System the site is using. This is helpful for a couple reason:
+
 • Knowing what CMS a site is using gives you insight into how the site code is
 structured
+
 • If the CMS is open source, you can browse the code for vulnerabilities and test them
 on the site
+
 • If you can determine the version code of the CMS, it’s possible the site may be
 outdated and vulnerable to disclosed security vulnerabilities
+
 
 # BuiltWith
 
@@ -204,9 +217,13 @@ https://cirt.net/nikto2
 Nikto is an Open Source web server scanner which tests against servers for multiple
 items, including:
 Potentially dangerous files/programs
+
 • Outdated versions of servers
+
 • Version specific problems
+
 • Checking for server configuration items
+
 According to Michiel, Nikto is helpful for finding files or directories that should not be
 available (e.g., an old SQL backup file, or the inside of a git repo)
 

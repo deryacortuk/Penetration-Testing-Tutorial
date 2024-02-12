@@ -260,6 +260,36 @@ Top 10 Tools used to crack WI-FI Password
 
 ● https://github.com/internetwache/CT_subdomains
 
+# Subdomain
+● https://github.com/OJ/gobuster
+
+● https://github.com/gwen001/github-search/blob/master/github-subdomains.py
+
+● https://opendata.rapid7.com/sonar.fdns_v2/
+
+● https://opendata.rapid7.com/sonar.fdns/
+
+● https://github.com/ghostlulzhacks/CertificateTransparencyLogs
+
+● https://github.com/infosec-au/altdns
+
+● https://github.com/guelfoweb/knock
+
+●  https://github.com/OWASP/Amass
+
+
+● Virus Total
+● Netcraft
+● DNSdumpster
+● Threat crowed
+● Shodan
+● Cencys
+● DNSdb
+● Pastebin
+
+
+<img width="900" alt="Sudomain-Enumara" src="https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/20aeae5c-d101-4bb1-bb89-9a01d40371ef">
+
 
 
 # ICS

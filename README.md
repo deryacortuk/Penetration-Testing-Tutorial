@@ -277,9 +277,13 @@ Top 10 Tools used to crack WI-FI Password
 ●  https://github.com/OWASP/Amass
 
 Subdomain Takeover: ● https://github.com/haccer/subjack
+
 Subdomain takeover is one of the easiest high-impact vulnerabilities you can search for.
+
 ./subjack -w <Subdomain List> -o results.txt -ssl -c fingerprints.json
+
 dig <Domain Here>
+
 • https://github.com/EdOverflow/can-i-take-over-xyz
 
 

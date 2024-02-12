@@ -277,6 +277,12 @@ Top 10 Tools used to crack WI-FI Password
 
 ●  https://github.com/OWASP/Amass
 
+Subdomain Takeover: ● https://github.com/haccer/subjack
+Subdomain takeover is one of the easiest high-impact vulnerabilities you can search for.
+./subjack -w <Subdomain List> -o results.txt -ssl -c fingerprints.json
+dig <Domain Here>
+• https://github.com/EdOverflow/can-i-take-over-xyz
+
 
 ● Virus Total
 ● Netcraft
@@ -290,6 +296,122 @@ Top 10 Tools used to crack WI-FI Password
 
 <img width="900" alt="Sudomain-Enumara" src="https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/20aeae5c-d101-4bb1-bb89-9a01d40371ef">
 
+# DNS Resolution
+
+● https://github.com/blechschmidt/massdns
+Note that in order to parse out the live domains we will need to parse the tools output. This can be done with a json parse, I will be using JQ for this. JQ is a 
+command line json parser.
+● https://github.com/stedolan/jq
+Another thing to note is that you must also have a list of DNS resolvers for the tool to use. The most popular one is Googles “8.8.8.8”. If you have a large list 
+you may want to add more.
+
+./bin/massdns -r resolvers.txt -t A -o J subdomains.txt | jq 'select(.resp_type=="A") | .query_name' | sort -u
+
+Resolvers.txt should hold your list of DNS resolvers and subdomains.txt holds the domains you want to check. This is then piped to JQ where we parse out all 
+domains that resolve to an IP.
+Screen shot : ● https://github.com/FortyNorthSecurity/EyeWitness
+Once you download and install the tool you can run it with the following command: Python3 EyeWitness.py -f subdomains.txt --web
+
+ <img width="900" alt="Screenshot 2024-02-12 232926" src="https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/377d6ccd-161c-4716-bc58-36f6462c456c">
+
+# Wayback machine crawl data :  ● https://web.archive.org/
+Going to “https://web.archive.org/web/*/facebook.com/*” will pull down a list of paths that the Wayback machine has crawled. We can then use the filter to 
+search for specific files such as anything that ends in “.bak” as those might contain juicy backup information. Other interesting filters include:
+● .zip
+● .config
+● /admin/
+● /api/
+Not only can you use this data to find interesting files but you can also find vulnerabilities by looking at the data. For instance, if you see the path 
+“example.com/?redirect=something.com” you can test for open redirects and SSRF vulnerabilities. If you see the GET parameter “msg=” you can test for XSS. 
+Wayback Machine: ● https://github.com/ghostlulzhacks/waybackMachine
+
+# Common crawl data : ● http://commoncrawl.org/
+The following script can be used to query the data provided by common crawl:
+● https://github.com/ghostlulzhacks/commoncrawl
+Run the following command to initiate the script:  python cc.py -d <Domain>
+
+● https://github.com/OJ/gobuster
+
+# Inspecting JavaScript Files
+Link Finder :  ● https://github.com/GerbenJavado/LinkFinder
+Linkfinder is one of the best tools for parsing endpoints from JavaScript files. The tool works by using jsbeautifier with a list of regexes to find URLs.
+The following command can be used to parse links from a JavaScript file: python linkfinder.py -i <JavaScript File> -o cli
+
+Jssearch:  ● https://github.com/incogbyte/jsearch
+Jssearch is another JavaScript parser except this tool is primarily used to find sensitive or interesting strings. For instance, developers will sometimes hard 
+code API keys, AWS credentials, and other sensitive information in JavaScript files.
+● https://github.com/incogbyte/jsearch/blob/master/regex_modules/regex_modules.py
+
+# Google Dork
+● https://www.exploit-db.com/google-hacking-database  
+● https://gbhackers.com/latest-google-dorks-list/  
+
+Trello, Pastebin, GitHub, Jira ....
+site:<Third Party Vendor> <Company Name>
+
+<img width="900" alt="1" src="https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/a850c7a2-2ffe-44f9-b845-01d1cbd8d667">
+
+<img width="900" alt="2" src="https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/980bc96e-a73e-49f0-a6e4-ad45e9af50bb">
+
+<img width="900" alt="3" src="https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/6a318434-e38f-416e-9137-56a15dce4d72">
+
+
+<img width="900" alt="4" src="https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/5257d0f9-b8c4-4e67-98e6-c25a8a827c05">
+
+# GitHub Dorks
+filename:.bash_history DOMAIN-NAME
+Usernames are often associated with passwords and api keys. If this was an engagement, I would use that key to log in to their application. A good list of these dorks can be found below:
+● https://github.com/techgaun/github-dorks/blob/master/github-dorks.txt
+
+# S3 Bucket Dorks
+The following Google Dork can be used to find buckets belonging to a company: site:.s3.amazonaws.com "example"
+There are way too many S3 bucket brute force tools a new one seems to come out every day. I typically use this one (its mine) but they all do the same thing in
+the end:  ● https://github.com/ghostlulzhacks/s3brute
+python amazon-s3-enum.py -w BucketNames.txt -d <Domain Here>
+
+# Google Cloud Storage
+Similar to by AWS tool it uses permutations to generate bucket names.
+● https://github.com/RhinoSecurityLabs/GCPBucketBrute
+python3 gcpbucketbrute.py -k <Domain Here> -u
+
+# Digital ocean Spaces 
+site:digitaloceanspaces.com <Domain Here>
+You can also try the brute force approach as well with this tool: ● https://github.com/appsecco/spaces-finder
+
+
+ 
+
+# Shodan
+This service scans the entire internet daily and provides this data to its users. If you have your target CIDR range you can use that to query Shodan. This will 
+display all assets in that CIDR range that have an open port.
+net:<”CIDR,CIDR,CIDR”>
+You can also search via the organizations name. org:<”Organization Name”>
+ssl:<”ORGANIZATION NAME”>
+
+# Cencys : ● https://censys.io/ipv4
+
+# Masscan
+The tool Masscan was built to scan the entire internet in just a few hours so it should be able to scan a large organization with ease.
+● https://github.com/robertdavidgraham/masscan
+sudo masscan -p<Port Here> <CIDR Range Here> --exclude <Exclude IP> --banners -oX <Out File Name>
+Make sure to enable banner grabbing as you can directly use that information to find potential vulnerabilities. To search through the results, you can use grep or 
+you can use the web UI built by offensive security.
+● https://github.com/offensive-security/masscan-web-ui
+
+# Wappalyzer
+Wappalyzer is by far the best tool for identifying web technologies. The tool analyzes an application's source code using a bunch of regexes to find out 
+what technologies it's running.
+You would have to manually visit each target application and write down their technologies. To get around this we need a tool. 
+● https://github.com/vincd/wappylyzer
+python3 main.py analyze -u <URL HERE>
+
+# Firewall
+Before you start throwing a bunch of XSS payloads at a target you should check to see if there is a WAF.
+● https://github.com/EnableSecurity/wafw00f
+Wafw00f <URL HERE>
+The hacking community has been bypassing WAFs ever since the first WAF came out and much of it is documented. 
+● https://github.com/0xInfection/Awesome-WAF#known-bypasses
+
 
 
 # ICS
@@ -299,6 +421,7 @@ Because every area in technology has its own specific vocabulary I wrote a small
 What is PLC, ICS, SCADA?
 What is an ICS?
 What is an Industrial Control Systems or ICS? An ICS is divided into different parts.
+
 
 Production network
 

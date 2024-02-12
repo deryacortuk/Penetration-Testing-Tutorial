@@ -302,10 +302,13 @@ dig <Domain Here>
 # DNS Resolution
 
 ● https://github.com/blechschmidt/massdns
-Note that in order to parse out the live domains we will need to parse the tools output. This can be done with a json parse, I will be using JQ for this. JQ is a 
-command line json parser.
+
+Note that to parse out the live domains we will need to parse the tools output. This can be done with a JSON parse, I will be using JQ for this. JQ is a 
+command line JSON parser.
+
 ● https://github.com/stedolan/jq
-Another thing to note is that you must also have a list of DNS resolvers for the tool to use. The most popular one is Googles “8.8.8.8”. If you have a large list 
+
+Another thing to note is that you must also have a list of DNS resolvers for the tool to use. The most popular one is Google's “8.8.8.8”. If you have a large list 
 you may want to add more.
 
 ./bin/massdns -r resolvers.txt -t A -o J subdomains.txt | jq 'select(.resp_type=="A") | .query_name' | sort -u
@@ -318,7 +321,7 @@ Once you download and install the tool you can run it with the following command
  <img width="900" alt="Screenshot 2024-02-12 232926" src="https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/377d6ccd-161c-4716-bc58-36f6462c456c">
 
 # Wayback machine crawl data :  ● https://web.archive.org/
-Going to “https://web.archive.org/web/*/facebook.com/*” will pull down a list of paths that the Wayback machine has crawled. We can then use the filter to 
+Going to “https://web.archive.org/web/*/facebook.com/*” will pull down a list of paths that the Wayback Machine has crawled. We can then use the filter to 
 search for specific files such as anything that ends in “.bak” as those might contain juicy backup information. Other interesting filters include:
 ● .zip
 ● .config

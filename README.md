@@ -243,7 +243,7 @@ Top 10 Tools used to crack WI-FI Password
 9. Airgeddon 
 10.  Wifiphiser
 
-#Wordlist
+# Wordlist
 ● https://github.com/danielmiessler/SecLists
 
 ● https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/RobotsDisallowed-Top1000.txt

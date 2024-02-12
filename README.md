@@ -245,12 +245,19 @@ Top 10 Tools used to crack WI-FI Password
 
 #Wordlist
 ● https://github.com/danielmiessler/SecLists
+
 ● https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/RobotsDisallowed-Top1000.txt
+
 ● https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/raft-large-directories.txt
+
 ● https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/raft-large-files.txt
+
 ● https://github.com/assetnote/commonspeak2
+
 ● https://github.com/assetnote/commonspeak2-wordlists
+
 ● https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056
+
 ● https://github.com/internetwache/CT_subdomains
 
 

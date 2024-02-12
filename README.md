@@ -1,6 +1,5 @@
 # Penetration-Testing-Tutorial
 
-*## Cybersecurity Software*
 
 Network Forensic Tools
 - Nmap

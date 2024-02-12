@@ -243,6 +243,18 @@ Top 10 Tools used to crack WI-FI Password
 9. Airgeddon 
 10.  Wifiphiser
 
+#Wordlist
+● https://github.com/danielmiessler/SecLists
+● https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/RobotsDisallowed-Top1000.txt
+● https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/raft-large-directories.txt
+● https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/raft-large-files.txt
+● https://github.com/assetnote/commonspeak2
+● https://github.com/assetnote/commonspeak2-wordlists
+● https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056
+● https://github.com/internetwache/CT_subdomains
+
+
+
 # ICS
 Industrial Control Systems or ICS have received a lot of attention lately. In the US the ICS-CERT was established and ENISA has a whole unit devoted to Industrial Control Systems/SCADA. But for most people working in IT it is still a relatively new playing field.
 

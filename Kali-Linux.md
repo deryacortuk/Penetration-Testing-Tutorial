@@ -53,6 +53,23 @@ Uniscan-gui is a comprehensive tool that can check for existing directories and 
 as perform basic port scans, traceroutes, server fingerprinting, static tests, dynamic tests,
 and stress tests against a target.
 
+# Wapiti
+Wapiti is an actively-maintained, command-line tool based web vulnerability scanner.
+Wapiti version 3.0 was released in January 2018 (http://wapiti.sourceforge.net/);
+however, Kali Linux still includes the previous version (2.3.0). According to the Wapiti
+website, this tool includes modules to detect the following vulnerabilities:
+File disclosure (Local and remote include/require, fopen, readfile...)
+Database Injection (PHP/JSP/ASP SQL injections and XPath injections)
+XSS (Cross-Site Scripting) injection (reflected and permanent)
+Command Execution detection (eval(), system(), passtru()...)
+CRLF Injection (HTTP Response Splitting, session fixation...)
+XXE (XML External Entity) injection
+Use of known potentially dangerous files (thanks to the Nikto database)
+Weak .htaccess configurations that can be bypassed
+Presence of backup files providing sensitive information (source code disclosure)
+Shellshock (aka Bash bug)
+
+
 # Web Vulnerability Scanners
 # Nikto
 Nikto is long-time favorite of web penetration testers. Few features have been added to it

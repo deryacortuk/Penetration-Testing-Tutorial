@@ -1,5 +1,14 @@
 # Penetration-Testing-Tutorial
-
+1. Wifite 
+2. Kismet 
+3. Fluxion. 
+4. Cain and Abel 
+5. Airjack 
+6. Aircrack-ng 
+7. CoWPAtty
+8. John The Ripper
+9. Airgeddon 
+10. Wifiphiser
 
 Network Forensic Tools
 - Nmap

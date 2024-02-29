@@ -1,3 +1,7 @@
+https://www.onyphe.io/
+https://whois.domaintools.com/
+
+
 dnscan https://github.com/rbsec/dnscan
 
 Knockpy https://github.com/guelfoweb/knock

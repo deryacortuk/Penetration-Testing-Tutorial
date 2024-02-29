@@ -1,6 +1,7 @@
 WAFNINJA, COMODO WAF, MODSECURITY WAF, AQTRONIX WEBKNIGHT WAF, AQTRONIX WEBKNIGHT, AQTRONIX WEBKNIGHT
 
 
+
 # nmap --script=http-waf-fingerprint,http-waf-detect -p443 example.com
 
 # wafw00f example.com   
@@ -88,4 +89,13 @@ sql = "SELECT * FROM table WHERE uid = 1 union/* and pid = */select 1,2,3"
 ’s’ -> %73 -> %25%37%33
 • The following payload contains a double URL encoded character
 1 union %25%37%33elect 1,2,3
+
+https://jlajara.gitlab.io/Bypass_WAF_Unicode
+
+https://hacken.io/discover/how-to-bypass-waf-hackenproof-cheat-sheet/
+
+https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/XSS%20Injection/README.md#filter-bypass-and-exotic-payloads
+
+https://gosecure.ai/blog/2023/06/21/aws-waf-clients-left-vulnerable-to-sql-injection-due-to-unorthodox-mssql-design-choice/
+
 

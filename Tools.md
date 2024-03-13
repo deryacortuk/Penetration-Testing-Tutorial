@@ -1,3 +1,12 @@
+# https://crackstation.net/
+# https://www.hashes.com/
+# Hash-identifier (https://www.hashidentifier.com/)
+# CrackHash (https://www.crackhash.com/)
+# OnlineHashCracker (https://www.onlinehashcracker.com/)
+# HashKiller (https://hashkiller.io/
+
+
+
 # Burp Suite
 
 https://portswigger.net/burp

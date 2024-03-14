@@ -18,10 +18,30 @@ Web applications often encode special characters into
 their HTML representations. By using HTML encoding, we can bypass
 certain WAF filters.
 
+
+<img width="900" alt="10" src="https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/6b6d16cf-28af-4ec7-a152-385ddaacd597">
+
+# Mixed encodings:
+By using a combination of different encodings, we can
+bypass filters that target specific encoding types. Combining URL encoding
+with HTML encoding can yield effective bypasses.
+
+<img width="700" alt="11" src="https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/ee8814f8-663a-4b05-8b18-296887eb909a">
+
+# Comments and whitespace Tricks
+Including comments and whitespace in payloads can help obfuscate them
+and bypass filters.
 Example:
 
 Standard payload: <script>alert(1)</script>
-Encoded payload: &lt;script&gt;alert(1)&lt;/script&gt
-Similarly, the SQL query SELECT * FROM users WHERE username =
-‘admin’ can be encoded as SELECT * FROM users WHERE username =
-‘adm&#105;n’.
+Obfuscated payload: <!-- <script> --> alert(1) <!-- </script> -->
+
+# Payload fragmentation and concatenation:
+Splitting payloads into
+fragments or concatenating them in unexpected ways can bypass certain
+WAF filters.
+Example:
+
+Standard payload: <script>alert(1)</script>
+
+Fragmented payload: <<script>>a<</script>>lert(1)<</script>>

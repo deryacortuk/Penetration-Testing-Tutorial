@@ -31,17 +31,18 @@ with HTML encoding can yield effective bypasses.
 # Comments and whitespace Tricks
 Including comments and whitespace in payloads can help obfuscate them
 and bypass filters.
-Example:
 
-Standard payload: <script>alert(1)</script>
-Obfuscated payload: <!-- <script> --> alert(1) <!-- </script> -->
 
 # Payload fragmentation and concatenation:
 Splitting payloads into
 fragments or concatenating them in unexpected ways can bypass certain
 WAF filters.
-Example:
 
-Standard payload: <script>alert(1)</script>
+<img width="570" alt="12" src="https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/33e4f2ee-e707-45a9-a81c-263dd5ac514b">
 
-Fragmented payload: <<script>>a<</script>>lert(1)<</script>>
+<img width="900" alt="13" src="https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/48b4d844-cf41-4b8e-92ac-f08f06ef49de">
+
+
+<img width="800" alt="14" src="https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/b1ed4853-1802-4311-a5aa-bbfc8a877e79">
+
+

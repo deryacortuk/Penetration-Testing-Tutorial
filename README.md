@@ -2,6 +2,7 @@
 
 ![GHP-uVfbkAASHt-](https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/8d1afc63-ef70-4370-96e3-0a662ec3fc06)
 
+![Pentest-Recon](https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/1f78134b-7ed8-40b7-bb44-fb030ba2ec6f)
 
 ![GHHqgtvXwAAhHiQ](https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/066a0081-82a8-46e9-a1cf-57438b9c8395)
 
@@ -10,7 +11,6 @@
 ![GHREQjGWAAEL5zo](https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/d0902551-8461-442b-9417-c70998efd2e3)
 
 
-![Pentest-Recon](https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/1f78134b-7ed8-40b7-bb44-fb030ba2ec6f)
 
 
 

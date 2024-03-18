@@ -102,7 +102,7 @@ Cybersecurity Tools By Category
 Information Gathering:
 >Nmap
 
->Shodan
+>Shodan  :  https://www.kitploit.com/2024/03/shodan-dorks.html
 
 >Maltego
 

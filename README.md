@@ -1,4 +1,5 @@
 # Penetration-Testing-Tutorial
+![GI8SAoKWAAAMyLH](https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/63665822-247b-49ba-a499-2daea28e771b)
 
 ![GHP-uVfbkAASHt-](https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/8d1afc63-ef70-4370-96e3-0a662ec3fc06)
 

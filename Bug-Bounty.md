@@ -1,6 +1,22 @@
 https://www.onyphe.io/
+
 https://whois.domaintools.com/
 
+https://builtwith.com/
+
+https://stackshare.io/
+
+https://cve.mitre.org/cve/search_cve_list.html
+
+https://pastebin.com/
+
+https://buckets.grayhatwarfare.com/
+
+https://viewdns.info/
+
+https://xmind.app/
+
+https://www.sublimetext.com/
 
 dnscan https://github.com/rbsec/dnscan
 

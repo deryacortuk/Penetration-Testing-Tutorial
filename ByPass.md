@@ -82,3 +82,5 @@ This means you can construct an XSS payload without quotes, like this:
 The String.fromCharCode() function returns a string, given an input list 
 of ASCII character codes. 
 
+Take a look at this polyglot payload published by EdOverflow at https://polyglot.innerht.ml/:javascript:"/*\"/*`/*' /*</template>
+</textarea></noembed></noscript></title></style></script>-->&lt;svg onload=/*<html/*/onmouseover=alert()//>

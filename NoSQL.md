@@ -48,3 +48,13 @@ SQL injections. You can insert special characters such as quotes (' "), semicol
 braces ({}) into user-input fields and look for errors or other anomalies. 
 You can also automate the hunting process by using the tool NoSQLMap 
 (https://github.com/codingo/NoSQLMap/).
+
+
+Developers can prevent NoSQL injection attacks by validating user input 
+and avoiding dangerous database functionalities. In MongoDB, you can disable the running of server-side JavaScript by using the --noscripting option 
+in the command line or setting the security.javascriptEnabled flag in the 
+configuration file to false. Find more information at https://docs.mongodb.com/
+manual/faq/fundamentals/index.html. 
+Additionally, you should follow the principle of least privilege when 
+assigning rights to applications. This means that applications should run 
+with only the privileges they require to operate.

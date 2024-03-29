@@ -1,6 +1,9 @@
 # Penetration-Testing-Tutorial
 ![GI8SAoKWAAAMyLH](https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/63665822-247b-49ba-a499-2daea28e771b)
 
+![GJxKiTPXMAA2R_C](https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/2e70f727-2c01-44fd-9b38-6793c11684a2)
+
+
 ![GHP-uVfbkAASHt-](https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/8d1afc63-ef70-4370-96e3-0a662ec3fc06)
 
 ![Pentest-Recon](https://github.com/deryacortuk/Penetration-Testing-Tutorial/assets/53267226/1f78134b-7ed8-40b7-bb44-fb030ba2ec6f)

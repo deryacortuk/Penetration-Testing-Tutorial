@@ -1,0 +1,6 @@
+#  time-of-check or time-of-use
+
+Most of the time, race conditions occur in features that deal with 
+numbers, such as online voting, online gaming scores, bank transfers, 
+e-commerce payments, and gift card balances.
+

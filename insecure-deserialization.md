@@ -1,3 +1,9 @@
+In a PHP application, look for 
+unserialize(), and in a Java application, look for readObject(). In Python and 
+Ruby applications, look for the functions pickle.loads() and Marshall.load(), 
+respectively.
+
+
 Automating the Exploitation by Using Ysoserial
 Ysoserial (https://github.com/frohoff/ysoserial/) is a tool that you can use to 
 generate payloads that exploit Java insecure deserialization bugs, saving you 
